@@ -1,0 +1,252 @@
+@font-face {
+    font-family: myfont;
+    src: url(/FONTS/Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+    box-sizing: border-box;
+
+}
+
+.img1{
+    height: 30vh;
+    width: 30vw;
+    position: absolute;
+    top: 7%;
+    left: 4%;   
+    background: url(/Images/pexels-photo-3768126.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2{
+    height: 30vh;
+    width: 30vw;
+    position: absolute;
+    top: 70%;
+    right: 4%;
+    background-position: center;
+    background-size: contain;
+    background: url(/Images/pexels-photo-256455.jpeg);
+
+}
+.Letter{
+    height: 40vh;
+    width: 100%;
+    background-color: #010718;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4070f4;
+    font-size: 40px;
+}
+
+
+.line2{
+    height: 2vh;
+    bottom: 100px;
+    width: 20vh;
+    background-color: #4070f4;
+    position: absolute;
+    animation-name: move1;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move1 {
+    from{
+        left: 0;
+    }to{
+        left:90.2%
+    }
+    
+}
+.container{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #010718;
+    overflow: hidden;
+}
+
+.container .text{
+    position: relative;
+    color: #4070f4;
+    font-size: 50px;
+    font-weight: 600;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 10px;
+    bottom: 0px;
+    
+}
+
+h1:hover::after{
+    background-color: #4070f4;
+    animation-name: going;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+
+}
+@keyframes going {
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+    
+}
+.container .text .first-text{
+    color: #fff;
+}
+.text .sec-text::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 2px solid #4070f4;
+    animation: animate 3s steps(20) infinite;
+}
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+.block{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   background: url(/Images/marek-piwnicki-hItc3wRAgzI-unsplash.jpg);
+   background-position: center;
+   background-size: cover;
+    overflow: hidden;
+}
+.block .first{
+height: 40vh;
+width: 15vw;
+
+}
+.block .second{
+ 
+    height: 40vh;
+    width: 15vw;
+    
+}
+.block .third{
+    height: 40vh;
+    width: 15vw;
+    
+}
+.block .fourth{
+    height: 40vh;
+    width: 15vw;
+
+}
+
+.block img:hover{
+    margin-top: -40px;
+    opacity: 0.7;
+}
+
+.page3{
+    height: 100vh;
+    background-color: #010718;
+    display: flex;
+   align-items: center;
+}
+.page4{
+    height: 100vh;
+    background-color: #010718;
+    display: flex;
+   /* align-items: center; */
+}
+.animate{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: #4070f4;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+.line{
+    height: 2vh;
+    width: 20vh;
+    background-color: #4070f4;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes move{
+    from{
+        left: 0;
+       
+    background-color: #4070f4;   
+    }
+    to{
+        left: 60%;
+        background-color: #010718;
+    }
+}
+@keyframes anime{
+    0%{
+        left: 0;
+        top: 300;
+       rotate: 0deg;
+    }
+    25%{
+        left: 90%;
+        top: 300%;
+        background-color: #010718;
+        rotate: 90deg;
+    }
+    50%{left: 90%;
+        top: 375%;
+        background-color: #4070f4 ;   
+        rotate: 180deg;
+
+    }
+    75%{
+        left: 0;
+        top: 375%;
+        background-color: #010718;
+        rotate: 270deg;
+    }
+    100%{
+        left: 0;
+        top: 300%;
+        background-color: #4070f4;
+        rotate: 360deg;
+    }
+
+
+}
